@@ -49,24 +49,24 @@ const moods = {
 };
 
 // lighten / darken helper
-// const adjust = (hex, amount) => {
-//   let col = hex.replace("#", "");
+const adjust = (hex, amount) => {
+  let col = hex.replace("#", "");
 
-//   let r = parseInt(col.substring(0, 2), 16);
-//   let g = parseInt(col.substring(2, 4), 16);
-//   let b = parseInt(col.substring(4, 6), 16);
+  let r = parseInt(col.substring(0, 2), 16);
+  let g = parseInt(col.substring(2, 4), 16);
+  let b = parseInt(col.substring(4, 6), 16);
 
-//   r = Math.min(255, Math.max(0, r + amount));
-//   g = Math.min(255, Math.max(0, g + amount));
-//   b = Math.min(255, Math.max(0, b + amount));
+  r = Math.min(255, Math.max(0, r + amount));
+  g = Math.min(255, Math.max(0, g + amount));
+  b = Math.min(255, Math.max(0, b + amount));
 
-//   return (
-//     "#" +
-//     r.toString(16).padStart(2, "0") +
-//     g.toString(16).padStart(2, "0") +
-//     b.toString(16).padStart(2, "0")
-//   );
-// };
+  return (
+    "#" +
+    r.toString(16).padStart(2, "0") +
+    g.toString(16).padStart(2, "0") +
+    b.toString(16).padStart(2, "0")
+  );
+};
 
 
 export const generatePalette = (mood) => {
