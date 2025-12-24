@@ -14,9 +14,13 @@ export default function PaletteDisplay({ colors }) {
       ))}
     </div>
 <div 
-    className="bg-yellow-400 mt-4 h-8 w-20 rounded-xl inline-block font-semibold cursor-pointer" 
+    className="bg-yellow-400 mt-2 pt-1 h-8 w-20 rounded-xl inline-block font-semibold cursor-pointer" 
     onClick={copyAll}>
         Copy all
+    </div>
+
+    <div className="mt-1">
+      developed by rushikesh shinde
     </div>
     </>
   );

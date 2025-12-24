@@ -11,9 +11,9 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen p-10 text-center bg-gray-50">
+    <div className="min-h-screen pt-4 pr-10 pl-10 pb-10 text-center bg-gray-300">
       <h1 className="text-4xl font-bold">Mood-Based Color Palette 🎨</h1>
-      <p className="text-gray-600 mt-2">Select your mood to generate a palette.</p>
+      <p className="text-gray-600 mt-1">Select your mood to generate a palette.</p>
 
       <MoodSelector onSelect={handleMood} />
 
