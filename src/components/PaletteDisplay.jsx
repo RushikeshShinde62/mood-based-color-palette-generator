@@ -19,9 +19,9 @@ export default function PaletteDisplay({ colors }) {
         Copy all
     </div>
 
-    <div className="mt-1">
-      developed by rushikesh shinde
-    </div>
+    <div className="mt-1"> 
+      developed by rushikesh shinde 
+    </div> 
     </>
   );
 }
